@@ -2,12 +2,10 @@ from pathlib import Path
 
 from setuptools import setup, find_packages
 
-import undetected_playwright
-
 # python setup.py sdist bdist_wheel && python -m twine upload dist/*
 setup(
     name="undetected-playwright",
-    version=undetected_playwright.__version__,
+    version="0.0.1",
     keywords=["playwright", "undetected-playwright", "playwright-stealth"],
     packages=find_packages(
         include=["undetected_playwright", "'undetected_playwright'.*", "LICENSE"]
